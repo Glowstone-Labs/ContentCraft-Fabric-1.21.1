@@ -1,0 +1,20 @@
+{
+  "item.contentcraft.xaenon_ingot": "Xaenon Ingot",
+  "item.contentcraft.raw_xaenon": "Raw Xaenon",
+  "block.contentcraft.xaenon_block": "Xaenon Block",
+  "block.contentcraft.raw_xaenon_block": "Raw Xaenon Block",
+  "block.contentcraft.xaenon_ore": "Xaenon Ore",
+
+  "item.contentcraft.xaenon_sword": "Xaenon Sword",
+  "item.contentcraft.xaenon_pickaxe": "Xaenon Pickaxe",
+  "item.contentcraft.xaenon_shovel": "Xaenon Shovel",
+  "item.contentcraft.xaenon_axe": "Xaenon Axe",
+  "item.contentcraft.xaenon_hoe": "Xaenon Hoe",
+
+  "item.contentcraft.xaenon_boots": "Xaenon Boots",
+  "item.contentcraft.xaenon_chestplate": "Xaenon Chestplate",
+  "item.contentcraft.xaenon_helmet": "Xaenon Helmet",
+  "item.contentcraft.xaenon_leggings": "Xaenon Leggings",
+
+  "itemgroup.contentcraft.contentcraft": "ContentCraft Stuff!"
+}
