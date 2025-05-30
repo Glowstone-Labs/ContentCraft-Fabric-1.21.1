@@ -1,1 +1,4 @@
-# ContentCraft-Fabric-1.21.1
+# ContentCraft Fabric Edition 
+## 1.21.1
+
+
