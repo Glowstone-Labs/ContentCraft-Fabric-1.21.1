@@ -17,6 +17,8 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        
+        BlockStateModelGenerator.BlockTexturePool mapleWoodPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MAPLE_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.XAENON_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_XAENON_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.XAENON_ORE);
@@ -24,9 +26,22 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.MAPLE_LOG).log(ModBlocks.MAPLE_LOG).wood(ModBlocks.MAPLE_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MAPLE_LOG).log(ModBlocks.STRIPPED_MAPLE_LOG).wood(ModBlocks.STRIPPED_MAPLE_WOOD);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAPLE_PLANKS);
         blockStateModelGenerator.registerSingleton(ModBlocks.MAPLE_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MAPLE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+
+        mapleWoodPool.stairs(ModBlocks.MAPLE_STAIRS);
+        mapleWoodPool.slab(ModBlocks.MAPLE_SLAB);
+
+        mapleWoodPool.button(ModBlocks.MAPLE_BUTTON);
+        mapleWoodPool.pressurePlate(ModBlocks.MAPLE_PRESSURE_PLATE);
+
+        mapleWoodPool.fence(ModBlocks.MAPLE_FENCE);
+        mapleWoodPool.fenceGate(ModBlocks.MAPLE_FENCE_GATE);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.MAPLE_DOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.MAPLE_TRAPDOOR);
+
     }
 
     @Override
