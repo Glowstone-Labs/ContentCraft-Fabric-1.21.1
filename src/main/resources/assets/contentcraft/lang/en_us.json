@@ -16,5 +16,21 @@
   "item.contentcraft.xaenon_helmet": "Xaenon Helmet",
   "item.contentcraft.xaenon_leggings": "Xaenon Leggings",
 
+  "block.contentcraft.maple_log": "Maple Log",
+  "block.contentcraft.maple_leaves": "Maple Leaves",
+  "block.contentcraft.maple_sapling": "Maple Sapling",
+  "block.contentcraft.maple_wood": "Maple Wood",
+  "block.contentcraft.stripped_maple_log": "Stripped Maple Log",
+  "block.contentcraft.stripped_maple_wood": "Stripped Maple Wood",
+  "block.contentcraft.maple_planks": "Maple Planks",
+  "block.contentcraft.maple_button": "Maple Button",
+  "block.contentcraft.maple_stairs": "Maple Stairs",
+  "block.contentcraft.maple_fence": "Maple Fence",
+  "block.contentcraft.maple_fence_gate": "Maple Fence Gate",
+  "block.contentcraft.maple_trapdoor": "Maple Trapdoor",
+  "block.contentcraft.maple_door": "Maple Door",
+  "block.contentcraft.maple_slab": "Maple Slab",
+  "block.contentcraft.maple_pressure_plate": "Maple Pressure Plate",
+
   "itemgroup.contentcraft.contentcraft": "ContentCraft Stuff!"
 }
