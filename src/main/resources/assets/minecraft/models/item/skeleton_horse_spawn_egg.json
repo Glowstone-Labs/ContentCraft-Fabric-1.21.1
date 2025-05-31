@@ -1,0 +1,7 @@
+{
+	
+	"parent": "item/blaze_spawn_egg",
+	"textures": {
+		"texture": "item/skeleton_horse_spawn_egg"
+	}
+}
