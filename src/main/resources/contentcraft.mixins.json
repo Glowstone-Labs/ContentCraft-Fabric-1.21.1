@@ -1,8 +1,12 @@
 {
 	"required": true,
-	"package": "xyz.glowstonelabs.contentcraft.mixin",
+	"package": "xyz.glowstonelabs.contentcraft.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [],
+	"client": [
+		"MixinTitleScreen",
+		"AxeItemMixin"
+	],
 	"injectors": {
 		"defaultRequire": 1
 	}
