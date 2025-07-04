@@ -23,19 +23,19 @@ public class ModBlocks {
     // ========================
     //      Xaenon Blocks
     // ========================
-    public static final Block XAENON_BLOCK = registerBlock("xaenon_block",
+    public static final Block XAENON_BLOCK = registerWithItem("xaenon_block",
             new Block(AbstractBlock.Settings.create()
                     .strength(4f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.METAL)));
 
-    public static final Block RAW_XAENON_BLOCK = registerBlock("raw_xaenon_block",
+    public static final Block RAW_XAENON_BLOCK = registerWithItem("raw_xaenon_block",
             new Block(AbstractBlock.Settings.create()
                     .strength(4f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.METAL)));
 
-    public static final Block XAENON_ORE = registerBlock("xaenon_ore",
+    public static final Block XAENON_ORE = registerWithItem("xaenon_ore",
             new Block(AbstractBlock.Settings.create()
                     .strength(4f)
                     .requiresTool()
@@ -44,75 +44,75 @@ public class ModBlocks {
     // ========================
     //      Maple WoodSet
     // ========================
-    public static final Block MAPLE_LOG = registerBlock("maple_log",
+    public static final Block MAPLE_LOG = registerWithItem("maple_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
 
-    public static final Block MAPLE_WOOD = registerBlock("maple_wood",
+    public static final Block MAPLE_WOOD = registerWithItem("maple_wood",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
 
-    public static final Block STRIPPED_MAPLE_LOG = registerBlock("stripped_maple_log",
+    public static final Block STRIPPED_MAPLE_LOG = registerWithItem("stripped_maple_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
 
-    public static final Block STRIPPED_MAPLE_WOOD = registerBlock("stripped_maple_wood",
+    public static final Block STRIPPED_MAPLE_WOOD = registerWithItem("stripped_maple_wood",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
 
-    public static final Block MAPLE_PLANKS = registerBlock("maple_planks",
+    public static final Block MAPLE_PLANKS = registerWithItem("maple_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
 
-    public static final Block MAPLE_STAIRS = registerBlock("maple_stairs",
+    public static final Block MAPLE_STAIRS = registerWithItem("maple_stairs",
             new StairsBlock(MAPLE_PLANKS.getDefaultState(),
                     AbstractBlock.Settings.create()
                             .strength(2f)
                             .requiresTool()));
 
-    public static final Block MAPLE_SLAB = registerBlock("maple_slab",
+    public static final Block MAPLE_SLAB = registerWithItem("maple_slab",
             new SlabBlock(AbstractBlock.Settings.create()
                     .strength(2f)
                     .requiresTool()));
 
-    public static final Block MAPLE_BUTTON = registerBlock("maple_button",
+    public static final Block MAPLE_BUTTON = registerWithItem("maple_button",
             new ButtonBlock(BlockSetType.OAK, 2,
                     AbstractBlock.Settings.create()
                             .strength(2f)
                             .requiresTool()
                             .noCollision()));
 
-    public static final Block MAPLE_PRESSURE_PLATE = registerBlock("maple_pressure_plate",
+    public static final Block MAPLE_PRESSURE_PLATE = registerWithItem("maple_pressure_plate",
             new PressurePlateBlock(BlockSetType.OAK,
                     AbstractBlock.Settings.create()
                             .strength(2f)
                             .requiresTool()));
 
-    public static final Block MAPLE_FENCE = registerBlock("maple_fence",
+    public static final Block MAPLE_FENCE = registerWithItem("maple_fence",
             new FenceBlock(AbstractBlock.Settings.create()
                     .strength(2f)
                     .requiresTool()));
 
-    public static final Block MAPLE_FENCE_GATE = registerBlock("maple_fence_gate",
+    public static final Block MAPLE_FENCE_GATE = registerWithItem("maple_fence_gate",
             new FenceGateBlock(WoodType.OAK,
                     AbstractBlock.Settings.create()
                             .strength(2f)
                             .requiresTool()));
 
-    public static final Block MAPLE_DOOR = registerBlock("maple_door",
+    public static final Block MAPLE_DOOR = registerWithItem("maple_door",
             new DoorBlock(BlockSetType.OAK,
                     AbstractBlock.Settings.create()
                             .strength(2f)
                             .requiresTool()
                             .nonOpaque()));
 
-    public static final Block MAPLE_TRAPDOOR = registerBlock("maple_trapdoor",
+    public static final Block MAPLE_TRAPDOOR = registerWithItem("maple_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK,
                     AbstractBlock.Settings.create()
                             .strength(2f)
                             .requiresTool()
                             .nonOpaque()));
 
-    public static final Block MAPLE_LEAVES = registerBlock("maple_leaves",
+    public static final Block MAPLE_LEAVES = registerWithItem("maple_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
 
     /** Maple sapling block, uses a custom SaplingGenerator linked to mod's tree feature */
-    public static final Block MAPLE_SAPLING = registerBlock("maple_sapling",
+    public static final Block MAPLE_SAPLING = registerWithItem("maple_sapling",
             new SaplingBlock(
                     new SaplingGenerator(
                             "tree_maple",
@@ -127,32 +127,25 @@ public class ModBlocks {
     // ========================
     //   Artificial Diamond
     // ========================
-    public static final Block ARTIFICIAL_DIAMOND_BLOCK = registerBlock("artificial_diamond_block",
+    public static final Block ARTIFICIAL_DIAMOND_BLOCK = registerWithItem("artificial_diamond_block",
             new Block(AbstractBlock.Settings.create()
                     .mapColor(MapColor.DIAMOND_BLUE)
                     .strength(20.0F, 6.0F)
                     .requiresTool()
                     .sounds(BlockSoundGroup.METAL)));
 
-    /**
-     * Registers a block and its block item simultaneously.
-     * @param name The block registry name.
-     * @param block The block instance.
-     * @return Registered block.
-     */
-    private static Block registerBlock(String name, Block block) {
-        registerBlockItem(name, block);
+    public static <T extends Block> T register(String name, T block) {
         return Registry.register(Registries.BLOCK, Identifier.of(ContentCraft.MOD_ID, name), block);
     }
 
-    /**
-     * Registers the block's corresponding BlockItem so it can be held and placed.
-     * @param name The block/item registry name.
-     * @param block The block instance.
-     */
-    private static void registerBlockItem(String name, Block block) {
-        Registry.register(Registries.ITEM, Identifier.of(ContentCraft.MOD_ID, name),
-                new BlockItem(block, new Item.Settings()));
+    public static <T extends Block> T registerWithItem(String name, T block, Item.Settings settings) {
+        T registered = register(name, block);
+        ModItems.registerBlockItem(name, registered, settings);
+        return registered;
+    }
+
+    public static <T extends Block> T registerWithItem(String name, T block) {
+        return registerWithItem(name, block, new Item.Settings());
     }
 
     /**

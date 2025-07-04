@@ -42,7 +42,7 @@ public class ContentCraft implements ModInitializer {
 		ModItemGroups.load();LOGGER.info("ModItemGroups (Creative Inventory Tabs) loaded successfully.");
 		ModConfigs.init();LOGGER.info("ModConfigs initialized.");
 
-		// Register blocks that can be stripped with an axe: maple log and wood		StrippableBlockRegistry.register(ModBlocks.MAPLE_LOG, ModBlocks.STRIPPED_MAPLE_LOG);
+		// Register blocks that can be stripped with an axe: maple log and wood	StrippableBlockRegistry.register(ModBlocks.MAPLE_LOG, ModBlocks.STRIPPED_MAPLE_LOG);
 		StrippableBlockRegistry.register(ModBlocks.MAPLE_WOOD, ModBlocks.STRIPPED_MAPLE_WOOD);
 		LOGGER.info("Strippable blocks registered: Maple log and wood.");
 

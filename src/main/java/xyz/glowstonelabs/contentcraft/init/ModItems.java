@@ -1,8 +1,11 @@
 package xyz.glowstonelabs.contentcraft.init;
 
+import net.minecraft.block.Block;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import xyz.glowstonelabs.contentcraft.ContentCraft;
 
@@ -154,9 +157,11 @@ public class ModItems {
         return Registry.register(Registries.ITEM, Identifier.of(ContentCraft.MOD_ID, name), item);
     }
 
-    public static final List<ItemConvertible> ITEMGROUP_BLACKLIST = new ArrayList<ItemConvertible>(
-            Arrays.asList());
-
+    public static <T extends Block> BlockItem registerBlockItem(String name, T registered, Item.Settings settings) {
+        Identifier id = Identifier.of(ContentCraft.MOD_ID, name);
+        RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, id);
+        return Registry.register(Registries.ITEM, id, new BlockItem(registered, settings));
+    }
     /**
      * Logs mod item registration during mod initialization.
      */

@@ -13,17 +13,14 @@ import xyz.glowstonelabs.contentcraft.ContentCraft;
 public class ModItemGroups {
     public static final ItemGroup CONTENTCRAFT_ORE_OVERHAUL = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(ContentCraft.MOD_ID, "contentcraft_ore_overhaul"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.XAENON_ORE.asItem(), 1))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.MAPLE_WOOD))
                     .displayName(Text.translatable("itemgroup.contentcraft.contentcraft_ore_overhaul"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.XAENON_INGOT);
                         entries.add(ModItems.RAW_XAENON);
                         entries.add(ModItems.ARTIFICIAL_DIAMOND);
-                        entries.add(new ItemStack(ModBlocks.ARTIFICIAL_DIAMOND_BLOCK, 1));
-                        entries.add(new ItemStack(ModBlocks.XAENON_ORE, 1));
-                        entries.add(new ItemStack(ModBlocks.RAW_XAENON_BLOCK, 1));
 
-
+                        entries.add(ModBlocks.MAPLE_WOOD.asItem());
 
                     }).build());
 
