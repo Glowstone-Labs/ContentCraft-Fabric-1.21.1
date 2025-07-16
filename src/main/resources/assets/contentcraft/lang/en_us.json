@@ -16,6 +16,20 @@
   "item.contentcraft.xaenon_helmet": "Xaenon Helmet",
   "item.contentcraft.xaenon_leggings": "Xaenon Leggings",
 
+  "item.contentcraft.artificial_diamond": "Artificial Diamond",
+  "block.contentcraft.artificial_diamond_block": "Artificial Diamond Block",
+
+  "item.contentcraft.artificial_diamond_sword": "Artificial Diamond Sword",
+  "item.contentcraft.artificial_diamond_pickaxe": "Artificial Diamond Pickaxe",
+  "item.contentcraft.artificial_diamond_shovel": "Artificial Diamond Shovel",
+  "item.contentcraft.artificial_diamond_axe": "Artificial Diamond Axe",
+  "item.contentcraft.artificial_diamond_hoe": "Artificial Diamond Hoe",
+
+  "item.contentcraft.artificial_diamond_boots": "Artificial Diamond Boots",
+  "item.contentcraft.artificial_diamond_chestplate": "Artificial Diamond Chestplate",
+  "item.contentcraft.artificial_diamond_helmet": "Artificial Diamond Helmet",
+  "item.contentcraft.artificial_diamond_leggings": "Artificial Diamond Leggings",
+
   "block.contentcraft.maple_log": "Maple Log",
   "block.contentcraft.maple_leaves": "Maple Leaves",
   "block.contentcraft.maple_sapling": "Maple Sapling",
@@ -31,6 +45,49 @@
   "block.contentcraft.maple_door": "Maple Door",
   "block.contentcraft.maple_slab": "Maple Slab",
   "block.contentcraft.maple_pressure_plate": "Maple Pressure Plate",
+  "item.contentcraft.maple_bark": "Maple Bark",
 
-  "itemgroup.contentcraft.contentcraft": "ContentCraft Stuff!"
+  "block.contentcraft.grass_slab": "Grass Slab",
+  "block.contentcraft.dirt_slab": "Dirt Slab",
+
+  "item.contentcraft.oak_bark": "Oak Bark",
+  "item.contentcraft.birch_bark": "Birch Bark",
+  "item.contentcraft.spruce_bark": "Spruce Bark",
+  "item.contentcraft.dark_oak_bark": "Dark Oak Bark",
+  "item.contentcraft.acacia_bark": "Acacia Bark",
+  "item.contentcraft.jungle_bark": "Jungle Bark",
+  "item.contentcraft.mangrove_bark": "Mangrove Bark",
+  "item.contentcraft.cherry_bark": "Cherry Bark",
+  "item.contentcraft.warped_bark": "Warped Bark",
+  "item.contentcraft.crimson_bark": "Crimson Bark",
+
+  "itemgroup.contentcraft.contentcraft_ore_expansion": "ContentCraft: Ore Expansion",
+  "itemgroup.contentcraft.contentcraft_exploration": "ContentCraft: Exploration",
+  "itemgroup.contentcraft.contentcraft_agriculture": "ContentCraft: Agriculture",
+  "itemgroup.contentcraft.contentcraft_deco": "ContentCraft: Deco",
+
+  "contentcraft.contentcraft.torchflowerConfig.enabled.prefix": "Configure the glowing properties of torchflowers. WARNING: Changes require game restart to take effect!",
+  "contentcraft.contentcraft.torchflowerConfig.enabled": "Enable Glowing Torchflowers",
+  "contentcraft.contentcraft.torchflowerConfig.brightness": "Mature Torchflower Light Level",
+  "contentcraft.contentcraft.torchflowerConfig.brightness.desc": "Valid Inputs (0-15)",
+  "contentcraft.contentcraft.torchflowerConfig.potBrightness": "Potted Torchflower Light Level",
+  "contentcraft.contentcraft.torchflowerConfig.potBrightness.desc": "Valid Inputs (0-15)",
+  "contentcraft.contentcraft.torchflowerConfig.stage1Brightness": "Seedling Stage Light Level",
+  "contentcraft.contentcraft.torchflowerConfig.stage1Brightness.desc": "Valid Inputs (0-15)",
+  "contentcraft.contentcraft.torchflowerConfig.stage2Brightness": "Growing Stage Light Level",
+  "contentcraft.contentcraft.torchflowerConfig.stage2Brightness.desc": "Valid Inputs (0-15)",
+
+  "contentcraft.contentcraft.hudConfig.newDayNotifier.prefix": "Configure the glowing properties of torchflowers. WARNING: Changes require game restart to take effect!",
+  "contentcraft.contentcraft.hudConfig.newDayNotifier": "Enable New Day Notifier",
+  "contentcraft.contentcraft.hudConfig.newDayNotifier.desc": "Shows notification when a new day begins",
+  "contentcraft.contentcraft.hudConfig.coordinateDisplay": "Coordinate Display",
+  "contentcraft.contentcraft.hudConfig.coordinateDisplay.desc": "Shows player coordinates on HUD",
+  "contentcraft.contentcraft.hudConfig.timeDisplay": "Time Display",
+  "contentcraft.contentcraft.hudConfig.timeDisplay.desc": "Shows current world time on HUD",
+  "contentcraft.contentcraft.hudConfig.mouseCursorPositionDisplay": "Cursor Position Display",
+  "contentcraft.contentcraft.hudConfig.mouseCursorPositionDisplay.desc": "Shows mouse cursor position on HUD",
+
+  "contentcraft.devmode_overlay": "DevMode Enabled:\nContentCraft 1.21.1 Fabric",
+  "contentcraft.titlescreen_text": "ContentCraft 1.21.1 Fabric",
+  "itemgroup.contentcraft.contentcraft_tools": "ContentCraft Tools"
 }

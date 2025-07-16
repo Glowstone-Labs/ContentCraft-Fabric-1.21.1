@@ -1,10 +1,8 @@
 package xyz.glowstonelabs.contentcraft.init;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -14,6 +12,7 @@ import net.minecraft.util.Identifier;
 import xyz.glowstonelabs.contentcraft.ContentCraft;
 
 import java.util.Optional;
+import java.util.function.Function;
 
 public class ModBlocks {
     public static final Block XAENON_BLOCK = registerBlock("xaenon_block",
@@ -75,6 +74,18 @@ public class ModBlocks {
     public static final Block MAPLE_TRAPDOOR = registerBlock("maple_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
 
+    public static final Block ARTIFICIAL_DIAMOND_BLOCK = registerBlock("artificial_diamond_block",
+            new Block(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.DIAMOND_BLUE)
+                    .strength(20.0F, 6.0F)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.METAL)));
+
+    public static final Block DIRT_SLAB = registerBlock("dirt_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.DIRT)));
+
+    // TODO: Add Grass Slab With Working biome textures, it was such a fucking mess
+    // TODO: Add Vertical Slabs for blocks with slab variant
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -84,5 +95,6 @@ public class ModBlocks {
         Registry.register(Registries.ITEM, Identifier.of(ContentCraft.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
+
     public static void load() { ContentCraft.LOGGER.info("Registering Mod Blocks for " + ContentCraft.MOD_ID); }
 }
