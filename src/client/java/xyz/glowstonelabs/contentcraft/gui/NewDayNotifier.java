@@ -14,7 +14,7 @@ public class NewDayNotifier {
      */
     public static void updateDayTitle(MinecraftClient client) {
         // If the New Day Notifier is disabled in the config or the world is null, do nothing
-        if (ModConfigs.CONFIG.NewDayNotifier || client.world == null) return;
+        if (ModConfigs.CONFIG.hudConfig.newDayNotifier || client.world == null) return;
 
         // Calculate the current in-game day based on world time (1 day = 24000 ticks)
         long currentDay = client.world.getTimeOfDay() / 24000L;

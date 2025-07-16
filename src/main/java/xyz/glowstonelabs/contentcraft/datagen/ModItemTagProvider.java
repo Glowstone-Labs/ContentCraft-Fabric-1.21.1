@@ -67,7 +67,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.WARPED_BARK)
                 .add(ModItems.CRIMSON_BARK)
                 .add(ModItems.MAPLE_BARK);
-;
+        ;
 
         // ===============
         // Armor Tags

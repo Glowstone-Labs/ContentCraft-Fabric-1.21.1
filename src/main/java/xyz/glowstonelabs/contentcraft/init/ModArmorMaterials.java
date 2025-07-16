@@ -28,24 +28,24 @@ public class ModArmorMaterials {
      */
     public static final RegistryEntry<ArmorMaterial> XAENON_ARMOR_MATERIAL =
             registerArmorMaterial("xaenon",
-            () -> new ArmorMaterial(
-                    Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-                        // Protection values for each armor piece
-                        map.put(ArmorItem.Type.BOOTS, 2);
-                        map.put(ArmorItem.Type.LEGGINGS, 4);
-                        map.put(ArmorItem.Type.CHESTPLATE, 6);
-                        map.put(ArmorItem.Type.HELMET, 2);
-                        map.put(ArmorItem.Type.BODY, 4); // Additional body part? (may not be used)
-                    }),
-                    20, // Durability multiplier: affects total durability of armor pieces
-                    SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, // Sound played when equipping this armor
-                    () -> Ingredient.ofItems(ModItems.XAENON_INGOT), // Item used to repair this armor in an anvil
-                    List.of(new ArmorMaterial.Layer(Identifier.of(ContentCraft.MOD_ID,
-                            "xaenon"))), // Armor texture layer(s)
-                    0, // Enchantability (higher = better enchantments)
-                    0  // Toughness (reduces damage taken from attacks)
-            )
-    );
+                    () -> new ArmorMaterial(
+                            Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                                // Protection values for each armor piece
+                                map.put(ArmorItem.Type.BOOTS, 2);
+                                map.put(ArmorItem.Type.LEGGINGS, 4);
+                                map.put(ArmorItem.Type.CHESTPLATE, 6);
+                                map.put(ArmorItem.Type.HELMET, 2);
+                                map.put(ArmorItem.Type.BODY, 4); // Additional body part? (may not be used)
+                            }),
+                            20, // Durability multiplier: affects total durability of armor pieces
+                            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, // Sound played when equipping this armor
+                            () -> Ingredient.ofItems(ModItems.XAENON_INGOT), // Item used to repair this armor in an anvil
+                            List.of(new ArmorMaterial.Layer(Identifier.of(ContentCraft.MOD_ID,
+                                    "xaenon"))), // Armor texture layer(s)
+                            0, // Enchantability (higher = better enchantments)
+                            0  // Toughness (reduces damage taken from attacks)
+                    )
+            );
 
     public static final RegistryEntry<ArmorMaterial> ARTIFICIAL_DIAMOND_ARMOR_MATERIAL =
             registerArmorMaterial("artificial_diamond",

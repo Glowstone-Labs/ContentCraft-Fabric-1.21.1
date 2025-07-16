@@ -33,15 +33,5 @@ public abstract class MixinTitleScreen extends Screen {
                 250,
                 0xFFFFFF
         );
-
-        if (ModConfigs.CONFIG.MouseCursorPositionDisplay) {
-            context.drawTextWithShadow(
-                    this.textRenderer,
-                    mousePos,
-                    mouseX + 15,
-                    mouseY,
-                    0xFFFFFF
-            );
-        }
     }
 }

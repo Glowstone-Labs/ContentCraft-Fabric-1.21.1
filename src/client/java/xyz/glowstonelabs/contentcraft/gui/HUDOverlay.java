@@ -88,11 +88,11 @@ public class HUDOverlay implements HudRenderCallback {
 
         // If the player has a compass AND coordinate display is enabled, use normal clock Y position.
         // Otherwise (coords are hidden), move the clock down to the coordinate Y position to fill the gap.
-        int clockYPos = hasCompass && ModConfigs.CONFIG.CordinateDisplay ? Y_CLOCK_POS : Y_COMPASS_POS;
+        int clockYPos = hasCompass && ModConfigs.CONFIG.hudConfig.coordinateDisplay ? Y_CLOCK_POS : Y_COMPASS_POS;
 
         // === Time Display ===
         // Only render time if the player has a clock and the config allows it
-        if (hasClock && ModConfigs.CONFIG.TimeDisplay) {
+        if (hasClock && ModConfigs.CONFIG.hudConfig.timeDisplay) {
             // Display "Day: n"
             dc.drawTextWithShadow(client.textRenderer,
                     String.format("Day: %d | ", day),
@@ -106,7 +106,7 @@ public class HUDOverlay implements HudRenderCallback {
 
         // === Coordinate & Direction Display ===
         // Only render coordinates if the player has a compass and the config allows it
-        if (hasCompass && ModConfigs.CONFIG.CordinateDisplay) {
+        if (hasCompass && ModConfigs.CONFIG.hudConfig.coordinateDisplay) {
             int x = (int)player.getX();
             int y = (int)player.getY();
             int z = (int)player.getZ();
@@ -124,6 +124,7 @@ public class HUDOverlay implements HudRenderCallback {
                     getCardinalDirection(player.getYaw()),
                     X_DIRPOS, Y_COMPASS_POS, GOLD);
         }
+
     }
 
     /**

@@ -2,14 +2,17 @@ package xyz.glowstonelabs.contentcraft.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.entity.player.ItemCooldownManager;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import xyz.glowstonelabs.contentcraft.init.ModBlocks;
 import xyz.glowstonelabs.contentcraft.init.ModItems;
+import xyz.glowstonelabs.contentcraft.util.ModTags;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -62,6 +65,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_XAENON, 9)
                 .input(ModBlocks.RAW_XAENON_BLOCK)
                 .criterion(hasItem(ModBlocks.RAW_XAENON_BLOCK), conditionsFromItem(ModBlocks.RAW_XAENON_BLOCK))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIRT_SLAB, 3)
+                .pattern("XXX")
+                .input('X', Items.DIRT)
+                .criterion(
+                        "has_grass_block", // Unique ID for the condition
+                        conditionsFromItem(Blocks.GRASS_BLOCK) // Player must have grass block
+                )
+                .offerTo(exporter);
+
+        // Shaped crafting recipe: 3x3 grid of raw xaenon items to make a raw xaenon block
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TROWEL)
+                .pattern(" I ")
+                .pattern(" S ")
+                .pattern(" S")
+                .input('I', Items.IRON_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter);
     }
 }

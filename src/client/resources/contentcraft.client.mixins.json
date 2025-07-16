@@ -4,9 +4,13 @@
   "compatibilityLevel": "JAVA_21",
   "client": [
     "ExampleClientMixin",
-    "MixinTitleScreen"
+    "MixinTitleScreen",
+    "ScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1
-	}
+  },
+  "mixins": [
+    "AxeItemMixin"
+  ]
 }

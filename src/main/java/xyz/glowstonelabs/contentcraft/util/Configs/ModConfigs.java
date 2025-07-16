@@ -31,15 +31,7 @@ public class ModConfigs extends Config {
         super(identifier, subfolder, folder, name);
     }
 
-    /**
-     * Optional method to preload or initialize config data.
-     * Currently empty, but useful if you want to do pre-setup logic.
-     */
-    public static void init() {
-        // Optional: preload or initialize configs here
-    }
+    public static void init() {}
 
-    // Examples of additional configs you might register:
-    // public static final MyConfig clientOnly = ConfigApiJava.registerAndLoadConfig(MyConfig::new, RegisterType.CLIENT);
-    // public static final MyConfig serverOnly = ConfigApiJava.registerAndLoadConfig(MyConfig::new, RegisterType.SERVER);
+    //huh, configs are surprisingly easy with this api- ? or is it like, a lib? i think its a lib
 }

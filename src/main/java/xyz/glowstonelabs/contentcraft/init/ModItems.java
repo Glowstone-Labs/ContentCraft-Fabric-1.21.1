@@ -1,79 +1,51 @@
 package xyz.glowstonelabs.contentcraft.init;
 
 import net.minecraft.block.Block;
+import net.minecraft.component.type.FoodComponents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import xyz.glowstonelabs.contentcraft.ContentCraft;
+import xyz.glowstonelabs.contentcraft.Item.PoisonousCarrotItem;
+import xyz.glowstonelabs.contentcraft.Item.TrowelItem;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import static xyz.glowstonelabs.contentcraft.ContentCraft.MOD_ID;
 
-/**
- * This class registers all custom items added by the mod.
- * The order of registration matches the grouping and sorting order used in ModItemGroups,
- * to keep creative tab consistent and organized.
- */
 public class ModItems {
-
-    // ========================
-    //      Materials
-    // ========================
+    public static final Item ARTIFICIAL_DIAMOND = registerItem("artificial_diamond", new Item(new Item.Settings()));
     public static final Item XAENON_INGOT = registerItem("xaenon_ingot", new Item(new Item.Settings()));
     public static final Item RAW_XAENON = registerItem("raw_xaenon", new Item(new Item.Settings()));
-    public static final Item ARTIFICIAL_DIAMOND = registerItem("artificial_diamond", new Item(new Item.Settings()));
 
-
-    // ========================
-    //     XAENON TOOLSET
-    // ========================
     public static final Item XAENON_SWORD = registerItem("xaenon_sword",
             new SwordItem(ModToolMaterials.XAENON, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.XAENON, 3, -2.4f))));
-
     public static final Item XAENON_PICKAXE = registerItem("xaenon_pickaxe",
             new PickaxeItem(ModToolMaterials.XAENON, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.XAENON, 1, -2.8f))));
-
     public static final Item XAENON_SHOVEL = registerItem("xaenon_shovel",
             new ShovelItem(ModToolMaterials.XAENON, new Item.Settings()
                     .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.XAENON, 1.5f, -3.0f))));
-
     public static final Item XAENON_AXE = registerItem("xaenon_axe",
             new AxeItem(ModToolMaterials.XAENON, new Item.Settings()
                     .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.XAENON, 6, -3.2f))));
-
     public static final Item XAENON_HOE = registerItem("xaenon_hoe",
             new HoeItem(ModToolMaterials.XAENON, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.XAENON, 0, -3f))));
 
-    // ========================
-    //      XAENON_ARMOR
-    // ========================
+
     public static final Item XAENON_HELMET = registerItem("xaenon_helmet",
             new ArmorItem(ModArmorMaterials.XAENON_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
-
     public static final Item XAENON_CHESTPLATE = registerItem("xaenon_chestplate",
             new ArmorItem(ModArmorMaterials.XAENON_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
                     .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
-
     public static final Item XAENON_LEGGINGS = registerItem("xaenon_leggings",
             new ArmorItem(ModArmorMaterials.XAENON_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
-
     public static final Item XAENON_BOOTS = registerItem("xaenon_boots",
             new ArmorItem(ModArmorMaterials.XAENON_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
-
-
-    // ========================
-    // ARTIFICIAL DIAMOND TOOLSET
-    // ========================
 
     // Sword: slightly less bonus damage than diamond (diamond: 3)
     public static final Item ARTIFICIAL_DIAMOND_SWORD = registerItem("artificial_diamond_sword",
@@ -93,21 +65,15 @@ public class ModItems {
                     .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.ARTIFICIAL_DIAMOND,
                             1.0f, -3.0f))));
 
-    // Axe: slightly less damage than diamond (diamond: 5 bonus)
     public static final Item ARTIFICIAL_DIAMOND_AXE = registerItem("artificial_diamond_axe",
             new AxeItem(ModToolMaterials.ARTIFICIAL_DIAMOND, new Item.Settings()
                     .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.ARTIFICIAL_DIAMOND,
                             5.0f, -3.2f))));
 
-    // Hoe: same as diamond, or even slower speed
     public static final Item ARTIFICIAL_DIAMOND_HOE = registerItem("artificial_diamond_hoe",
             new HoeItem(ModToolMaterials.ARTIFICIAL_DIAMOND, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.ARTIFICIAL_DIAMOND,
                             -0.5f, -3.2f))));
-
-    // ========================
-    // ARTIFICIAL DIAMOND ARMOR
-    // ========================
 
     public static final Item ARTIFICIAL_DIAMOND_HELMET = registerItem("artificial_diamond_helmet",
             new ArmorItem(ModArmorMaterials.ARTIFICIAL_DIAMOND_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
@@ -125,9 +91,6 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.ARTIFICIAL_DIAMOND_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(28))));
 
-    // ========================
-    //       WOOD BARKS
-    // ========================
 
     public static final Item OAK_BARK = registerItem("oak_bark", new Item(new Item.Settings()));
     public static final Item BIRCH_BARK = registerItem("birch_bark", new Item(new Item.Settings()));
@@ -141,31 +104,13 @@ public class ModItems {
     public static final Item CRIMSON_BARK = registerItem("crimson_bark", new Item(new Item.Settings()));
     public static final Item MAPLE_BARK = registerItem("maple_bark", new Item(new Item.Settings()));
 
+    public static final Item POISONOUS_CARROT = registerItem("poisonous_carrot", new PoisonousCarrotItem((new Item.Settings()).food(FoodComponents.POISONOUS_POTATO)));
 
+    public static final Item TROWEL = registerItem("trowel", new TrowelItem(new Item.Settings()));
 
-
-
-
-
-    /**
-     * Helper method to register an item with the mod ID namespace.
-     * @param name The item registry name.
-     * @param item The item instance.
-     * @return The registered item.
-     */
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, Identifier.of(ContentCraft.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, Identifier.of(MOD_ID, name), item);
     }
 
-    public static <T extends Block> BlockItem registerBlockItem(String name, T registered, Item.Settings settings) {
-        Identifier id = Identifier.of(ContentCraft.MOD_ID, name);
-        RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, id);
-        return Registry.register(Registries.ITEM, id, new BlockItem(registered, settings));
-    }
-    /**
-     * Logs mod item registration during mod initialization.
-     */
-    public static void load() {
-        ContentCraft.LOGGER.info("Registering Mod Items for " + ContentCraft.MOD_ID);
-    }
+    public static void load() { ContentCraft.LOGGER.info("Registering Mod Items for " + MOD_ID); }
 }

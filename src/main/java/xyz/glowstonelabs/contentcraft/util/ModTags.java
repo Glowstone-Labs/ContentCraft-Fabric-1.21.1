@@ -49,7 +49,6 @@ public class ModTags {
          * Tag grouping all hammer items defined in the mod.
          * Allows for easy checking of whether an item is considered a hammer.
          */
-        public static final TagKey<Item> HAMMERS = createTag("hammers");
         public static final TagKey<Item> WOOD_BARKS = createTag("wood_barks");
 
 

@@ -109,6 +109,8 @@ processResources {
 	filesMatching("fabric.mod.json") {
 		expand "version": inputs.properties.version
 	}
+
+	duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }
 
 // Configure Java compilation tasks to use Java 21
