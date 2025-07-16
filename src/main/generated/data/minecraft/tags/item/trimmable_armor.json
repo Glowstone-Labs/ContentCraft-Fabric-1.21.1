@@ -3,6 +3,10 @@
     "contentcraft:xaenon_helmet",
     "contentcraft:xaenon_chestplate",
     "contentcraft:xaenon_leggings",
-    "contentcraft:xaenon_boots"
+    "contentcraft:xaenon_boots",
+    "contentcraft:artificial_diamond_helmet",
+    "contentcraft:artificial_diamond_chestplate",
+    "contentcraft:artificial_diamond_leggings",
+    "contentcraft:artificial_diamond_boots"
   ]
 }

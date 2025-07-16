@@ -5,11 +5,9 @@
 	"name": "ContentCraft",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Developers:",
-		" - Hakerboi - Fabric Dev,",
-		" - CodeRandomMC - NeoForge Dev,",
-		"Artists",
-		" - Auzdin - Pixel Art"
+		"Hakerboi",
+		"D4RKJ0K3R(CodeRandomMC)",
+		"Auzdin"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -44,5 +42,13 @@
 	},
 	"suggests": {
 		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.com/invite/zkyvsB3xAz",
+				"modmenu.youtube": "https://www.youtube.com/@glowstonelabs"
+			}
+		}
 	}
 }
