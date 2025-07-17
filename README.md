@@ -23,7 +23,13 @@
 
 **ContentCraft has lots of Features, but i am going to go through some of the more important ones right now, but you can visit our Official [wiki](https://www.google.com) for more in-depth explanations!**
 
+---
+
 //TODO: Add Feature List Based on the Creative Tab Categories 
+
+### Exploration:
+
+ Maple Woodset
 
 ---
 <div align="left"><left>
