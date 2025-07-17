@@ -6,7 +6,6 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
-import xyz.glowstonelabs.contentcraft.util.ModTags;
 
 import java.util.function.Supplier;
 
@@ -14,7 +13,7 @@ import java.util.function.Supplier;
  * Enum representing custom tool materials added by the mod.
  * Implements Minecraft's ToolMaterial interface to define behavior for tools using these materials.
  */
-public enum ModToolMaterials implements ToolMaterial {
+public enum ModTools implements ToolMaterial {
 
     /**
      * XAENON tool material:
@@ -75,12 +74,12 @@ public enum ModToolMaterials implements ToolMaterial {
      * @param enchantability Enchanting power.
      * @param repairIngredient Supplier returning the ingredient to repair the tool.
      */
-    ModToolMaterials(final TagKey<Block> inverseTag,
-                     final int itemDurability,
-                     final float miningSpeed,
-                     final float attackDamage,
-                     final int enchantability,
-                     final Supplier<Ingredient> repairIngredient) {
+    ModTools(final TagKey<Block> inverseTag,
+             final int itemDurability,
+             final float miningSpeed,
+             final float attackDamage,
+             final int enchantability,
+             final Supplier<Ingredient> repairIngredient) {
         this.inverseTag = inverseTag;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;

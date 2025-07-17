@@ -132,6 +132,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.POISONOUS_CARROT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.TROWEL, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.BOILED_EGG, Models.GENERATED);
     }
 
 }

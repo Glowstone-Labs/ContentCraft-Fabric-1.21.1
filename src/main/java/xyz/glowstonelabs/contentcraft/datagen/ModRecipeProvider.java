@@ -8,6 +8,7 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.entity.player.ItemCooldownManager;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import xyz.glowstonelabs.contentcraft.init.ModBlocks;
@@ -79,9 +80,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         // Shaped crafting recipe: 3x3 grid of raw xaenon items to make a raw xaenon block
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TROWEL)
-                .pattern(" I ")
+                .pattern("  I")
                 .pattern(" S ")
-                .pattern(" S")
+                .pattern("S  ")
                 .input('I', Items.IRON_INGOT)
                 .input('S', Items.STICK)
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))

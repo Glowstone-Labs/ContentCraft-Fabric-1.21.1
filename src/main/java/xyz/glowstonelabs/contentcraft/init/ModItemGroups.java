@@ -98,10 +98,18 @@ public class ModItemGroups {
 
     public static final ItemGroup CONTENTCRAFT_TOOLS = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(ContentCraft.MOD_ID, "contentcraft_contentcraft_tools"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.DIRT_SLAB))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.TROWEL))
                     .displayName(Text.translatable("itemgroup.contentcraft.contentcraft_tools"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.TROWEL);
+                    }).build());
+
+    public static final ItemGroup CONTENTCRAFT_PANTRY = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(ContentCraft.MOD_ID, "contentcraft_contentcraft_pantry"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.BOILED_EGG))
+                    .displayName(Text.translatable("itemgroup.contentcraft.contentcraft_pantry"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.BOILED_EGG);
                     }).build());
 
 
