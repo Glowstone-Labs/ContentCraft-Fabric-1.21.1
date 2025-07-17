@@ -101,5 +101,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         // plank.
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.MAPLE_PLANKS.asItem());
+
     }
 }

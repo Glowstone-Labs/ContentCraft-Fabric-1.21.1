@@ -19,7 +19,7 @@ import java.util.function.Supplier;
  * Class to define and register custom armor materials for the mod.
  * Armor materials define durability, protection, enchantability, equip sounds, repair materials, etc.
  */
-public class ModArmorMaterials {
+public class ModArmors {
 
     /**
      * XAENON_ARMOR_MATERIAL defines the custom armor material "xaenon" with specific stats.
