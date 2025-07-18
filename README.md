@@ -29,7 +29,7 @@
 
 ### Exploration:
 
- Maple Woodset
+ Maple Woodset.
 
 ---
 <div align="left"><left>
