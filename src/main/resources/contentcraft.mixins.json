@@ -3,6 +3,7 @@
   "package": "xyz.glowstonelabs.contentcraft.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "AxeItemMixin",
     "BlocksMixin",
     "CauldronBehaviorMixin"
   ],

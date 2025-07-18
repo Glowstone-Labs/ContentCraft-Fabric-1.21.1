@@ -1,14 +1,10 @@
 package xyz.glowstonelabs.contentcraft.datagen;
 
-import com.terraformersmc.modmenu.util.mod.Mod;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
-import net.minecraft.registry.Registries;
-import net.minecraft.util.Identifier;
 import xyz.glowstonelabs.contentcraft.init.ModBlocks;
 import xyz.glowstonelabs.contentcraft.init.ModItems;
 
@@ -116,18 +112,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ARTIFICIAL_DIAMOND_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ARTIFICIAL_DIAMOND_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ARTIFICIAL_DIAMOND_BOOTS));
-
-        itemModelGenerator.register(ModItems.OAK_BARK, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BIRCH_BARK, Models.GENERATED);
-        itemModelGenerator.register(ModItems.SPRUCE_BARK, Models.GENERATED);
-        itemModelGenerator.register(ModItems.DARK_OAK_BARK, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ACACIA_BARK, Models.GENERATED);
-        itemModelGenerator.register(ModItems.JUNGLE_BARK, Models.GENERATED);
-        itemModelGenerator.register(ModItems.MANGROVE_BARK, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CHERRY_BARK, Models.GENERATED);
-        itemModelGenerator.register(ModItems.WARPED_BARK, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CRIMSON_BARK, Models.GENERATED);
-        itemModelGenerator.register(ModItems.MAPLE_BARK, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.POISONOUS_CARROT, Models.GENERATED);
 

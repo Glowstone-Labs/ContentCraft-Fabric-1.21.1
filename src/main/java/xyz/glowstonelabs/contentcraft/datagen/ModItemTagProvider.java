@@ -6,6 +6,7 @@ import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 import xyz.glowstonelabs.contentcraft.init.ModBlocks;
 import xyz.glowstonelabs.contentcraft.init.ModItems;
+
 import xyz.glowstonelabs.contentcraft.util.ModTags;
 
 import java.util.concurrent.CompletableFuture;
@@ -53,21 +54,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.XAENON_HOE)
                 .add(ModItems.ARTIFICIAL_DIAMOND_HOE);
-
-
-        getOrCreateTagBuilder(ModTags.Items.WOOD_BARKS)
-                .add(ModItems.OAK_BARK)
-                .add(ModItems.BIRCH_BARK)
-                .add(ModItems.SPRUCE_BARK)
-                .add(ModItems.DARK_OAK_BARK)
-                .add(ModItems.ACACIA_BARK)
-                .add(ModItems.JUNGLE_BARK)
-                .add(ModItems.MANGROVE_BARK)
-                .add(ModItems.CHERRY_BARK)
-                .add(ModItems.WARPED_BARK)
-                .add(ModItems.CRIMSON_BARK)
-                .add(ModItems.MAPLE_BARK);
-        ;
 
         // ===============
         // Armor Tags

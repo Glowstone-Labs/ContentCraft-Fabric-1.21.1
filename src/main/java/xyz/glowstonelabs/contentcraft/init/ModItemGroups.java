@@ -1,7 +1,6 @@
 package xyz.glowstonelabs.contentcraft.init;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -22,9 +21,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RAW_XAENON_BLOCK);
                         entries.add(ModBlocks.XAENON_ORE);
                         entries.add(ModItems.XAENON_SWORD);
+                        entries.add(ModItems.XAENON_AXE);
                         entries.add(ModItems.XAENON_PICKAXE);
                         entries.add(ModItems.XAENON_SHOVEL);
-                        entries.add(ModItems.XAENON_AXE);
                         entries.add(ModItems.XAENON_HOE);
                         entries.add(ModItems.XAENON_HELMET);
                         entries.add(ModItems.XAENON_CHESTPLATE);
