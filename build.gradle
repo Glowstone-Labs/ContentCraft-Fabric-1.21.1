@@ -67,7 +67,6 @@ dependencies {
 
 	include(modImplementation("vazkii.patchouli:Patchouli:${project.patchouli_version}"))
 
-	include("net.fabricmc.fabric:fabric-registry-sync-v0:${project.fabric_version}")
 }
 
 processResources {
