@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/door_bottom_right_open",
-  "textures": {
-    "bottom": "contentcraft:block/maple_door_bottom",
-    "top": "contentcraft:block/maple_door_top"
-  }
-}

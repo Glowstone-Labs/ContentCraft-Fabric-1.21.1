@@ -1,7 +1,0 @@
-{
-	
-	"parent": "item/creeper_spawn_egg",
-	"textures": {
-		"texture": "item/husk_spawn_egg"
-	}
-}
