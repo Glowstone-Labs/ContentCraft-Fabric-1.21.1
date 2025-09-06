@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "s": {
+      "item": "minecraft:sand"
+    }
+  },
+  "pattern": [
+    "sss"
+  ],
+  "result": {
+    "count": 3,
+    "id": "contentcraft:sand_slab"
+  }
+}

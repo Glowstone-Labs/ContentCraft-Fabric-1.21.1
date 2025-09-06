@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "contentcraft:blue_nether_bricks"
+    }
+  },
+  "pattern": [
+    "bbb"
+  ],
+  "result": {
+    "count": 3,
+    "id": "contentcraft:blue_nether_brick_slab"
+  }
+}

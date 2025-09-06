@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "contentcraft:diorite_bricks"
+    }
+  },
+  "pattern": [
+    "ddd",
+    "ddd"
+  ],
+  "result": {
+    "count": 1,
+    "id": "contentcraft:diorite_brick_wall"
+  }
+}

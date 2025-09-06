@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "contentcraft:block/xaenon_slab"
+    },
+    "type=double": {
+      "model": "contentcraft:block/xaenon_block"
+    },
+    "type=top": {
+      "model": "contentcraft:block/xaenon_slab_top"
+    }
+  }
+}

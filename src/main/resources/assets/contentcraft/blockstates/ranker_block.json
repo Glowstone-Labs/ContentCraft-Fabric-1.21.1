@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "tier=s,facing=north": { "model": "contentcraft:block/ranker_block_s", "y": 0 },
+    "tier=s,facing=east":  { "model": "contentcraft:block/ranker_block_s", "y": 90 },
+    "tier=s,facing=south": { "model": "contentcraft:block/ranker_block_s", "y": 180 },
+    "tier=s,facing=west":  { "model": "contentcraft:block/ranker_block_s", "y": 270 },
+
+    "tier=a,facing=north": { "model": "contentcraft:block/ranker_block_a", "y": 0 },
+    "tier=a,facing=east":  { "model": "contentcraft:block/ranker_block_a", "y": 90 },
+    "tier=a,facing=south": { "model": "contentcraft:block/ranker_block_a", "y": 180 },
+    "tier=a,facing=west":  { "model": "contentcraft:block/ranker_block_a", "y": 270 },
+
+    "tier=b,facing=north": { "model": "contentcraft:block/ranker_block_b", "y": 0 },
+    "tier=b,facing=east":  { "model": "contentcraft:block/ranker_block_b", "y": 90 },
+    "tier=b,facing=south": { "model": "contentcraft:block/ranker_block_b", "y": 180 },
+    "tier=b,facing=west":  { "model": "contentcraft:block/ranker_block_b", "y": 270 },
+
+    "tier=c,facing=north": { "model": "contentcraft:block/ranker_block_c", "y": 0 },
+    "tier=c,facing=east":  { "model": "contentcraft:block/ranker_block_c", "y": 90 },
+    "tier=c,facing=south": { "model": "contentcraft:block/ranker_block_c", "y": 180 },
+    "tier=c,facing=west":  { "model": "contentcraft:block/ranker_block_c", "y": 270 },
+
+    "tier=d,facing=north": { "model": "contentcraft:block/ranker_block_d", "y": 0 },
+    "tier=d,facing=east":  { "model": "contentcraft:block/ranker_block_d", "y": 90 },
+    "tier=d,facing=south": { "model": "contentcraft:block/ranker_block_d", "y": 180 },
+    "tier=d,facing=west":  { "model": "contentcraft:block/ranker_block_d", "y": 270 }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "contentcraft:granite_bricks"
+    }
+  },
+  "pattern": [
+    "ggg"
+  ],
+  "result": {
+    "count": 3,
+    "id": "contentcraft:granite_brick_slab"
+  }
+}

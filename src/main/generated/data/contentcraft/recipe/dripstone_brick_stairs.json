@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "contentcraft:dripstone_bricks"
+    }
+  },
+  "pattern": [
+    "d  ",
+    "dd ",
+    "ddd"
+  ],
+  "result": {
+    "count": 4,
+    "id": "contentcraft:dripstone_brick_stairs"
+  }
+}
