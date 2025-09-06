@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "contentcraft:calcite_bricks"
+    }
+  },
+  "pattern": [
+    "c  ",
+    "cc ",
+    "ccc"
+  ],
+  "result": {
+    "count": 4,
+    "id": "contentcraft:calcite_brick_stairs"
+  }
+}

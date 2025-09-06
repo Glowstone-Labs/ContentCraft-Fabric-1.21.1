@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "north": "contentcraft:block/ranker_c_letter",
+    "south": "contentcraft:block/ranker_c_blank",
+    "east":  "contentcraft:block/ranker_c_blank",
+    "west":  "contentcraft:block/ranker_c_blank",
+    "up":    "contentcraft:block/ranker_c_blank",
+    "down":  "contentcraft:block/ranker_c_blank",
+    "particle": "contentcraft:block/ranker_c_blank"
+  }
+}

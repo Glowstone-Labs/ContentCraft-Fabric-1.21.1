@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "contentcraft:block/granite_bricks",
+    "side": "contentcraft:block/granite_bricks",
+    "top": "contentcraft:block/granite_bricks"
+  }
+}

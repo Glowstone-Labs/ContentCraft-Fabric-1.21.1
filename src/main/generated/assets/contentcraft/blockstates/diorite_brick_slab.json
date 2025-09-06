@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "contentcraft:block/diorite_brick_slab"
+    },
+    "type=double": {
+      "model": "contentcraft:block/diorite_bricks"
+    },
+    "type=top": {
+      "model": "contentcraft:block/diorite_brick_slab_top"
+    }
+  }
+}

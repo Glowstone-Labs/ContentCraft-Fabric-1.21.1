@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:dripstone_block"
+    }
+  },
+  "pattern": [
+    "ddd",
+    "ddd"
+  ],
+  "result": {
+    "count": 1,
+    "id": "contentcraft:dripstone_wall"
+  }
+}

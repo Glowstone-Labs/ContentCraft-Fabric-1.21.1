@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "contentcraft:dripstone_bricks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:dripstone_block"
+  }
+}

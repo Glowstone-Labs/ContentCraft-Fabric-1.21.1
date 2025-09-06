@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "contentcraft:granite_bricks"
+    }
+  },
+  "pattern": [
+    "g  ",
+    "gg ",
+    "ggg"
+  ],
+  "result": {
+    "count": 4,
+    "id": "contentcraft:granite_brick_stairs"
+  }
+}
