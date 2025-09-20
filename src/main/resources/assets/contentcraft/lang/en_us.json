@@ -1,0 +1,168 @@
+{
+  "itemgroup.contentcraft.contentcraft_ore_expansion": "ContentCraft: Ore Expansion",
+
+
+  "item.contentcraft.raw_xaenon": "Raw Xaenon",
+  "item.contentcraft.xaenon_ingot": "Xaenon Ingot",
+  "block.contentcraft.raw_xaenon_block": "Raw Xaenon Block",
+  "block.contentcraft.xaenon_block": "Xaenon Block",
+  "block.contentcraft.xaenon_slab": "Xaenon Slab",
+  "block.contentcraft.xaenon_stairs": "Xaenon Stairs",
+  "block.contentcraft.xaenon_ore": "Xaenon Ore",
+
+  "item.contentcraft.xaenon_axe": "Xaenon Axe",
+  "item.contentcraft.xaenon_hoe": "Xaenon Hoe",
+  "item.contentcraft.xaenon_pickaxe": "Xaenon Pickaxe",
+  "item.contentcraft.xaenon_shovel": "Xaenon Shovel",
+  "item.contentcraft.xaenon_sword": "Xaenon Sword",
+
+  "item.contentcraft.xaenon_boots": "Xaenon Boots",
+  "item.contentcraft.xaenon_chestplate": "Xaenon Chestplate",
+  "item.contentcraft.xaenon_helmet": "Xaenon Helmet",
+  "item.contentcraft.xaenon_leggings": "Xaenon Leggings",
+
+  "item.contentcraft.artificial_diamond": "Artificial Diamond",
+  "block.contentcraft.artificial_diamond_block": "Artificial Diamond Block",
+
+  "item.contentcraft.artificial_diamond_axe": "Artificial Diamond Axe",
+  "item.contentcraft.artificial_diamond_hoe": "Artificial Diamond Hoe",
+  "item.contentcraft.artificial_diamond_pickaxe": "Artificial Diamond Pickaxe",
+  "item.contentcraft.artificial_diamond_shovel": "Artificial Diamond Shovel",
+  "item.contentcraft.artificial_diamond_sword": "Artificial Diamond Sword",
+
+  "item.contentcraft.artificial_diamond_boots": "Artificial Diamond Boots",
+  "item.contentcraft.artificial_diamond_chestplate": "Artificial Diamond Chestplate",
+  "item.contentcraft.artificial_diamond_helmet": "Artificial Diamond Helmet",
+  "item.contentcraft.artificial_diamond_leggings": "Artificial Diamond Leggings",
+
+
+
+  "itemgroup.contentcraft.contentcraft_exploration": "ContentCraft: Exploration",
+
+
+  "block.contentcraft.maple_log": "Maple Log",
+  "block.contentcraft.stripped_maple_log": "Stripped Maple Log",
+  "block.contentcraft.maple_wood": "Maple Wood",
+  "block.contentcraft.stripped_maple_wood": "Stripped Maple Wood",
+  "block.contentcraft.maple_planks": "Maple Planks",
+  "block.contentcraft.maple_slab": "Maple Slab",
+  "block.contentcraft.maple_stairs": "Maple Stairs",
+  "block.contentcraft.maple_fence": "Maple Fence",
+  "block.contentcraft.maple_fence_gate": "Maple Fence Gate",
+  "block.contentcraft.maple_door": "Maple Door",
+  "block.contentcraft.maple_trapdoor": "Maple Trapdoor",
+  "block.contentcraft.maple_pressure_plate": "Maple Pressure Plate",
+  "block.contentcraft.maple_button": "Maple Button",
+  "block.contentcraft.maple_leaves": "Maple Leaves",
+  "block.contentcraft.maple_sapling": "Maple Sapling",
+
+  "item.contentcraft.maple_bark": "Maple Bark",
+  "item.contentcraft.acacia_bark": "Acacia Bark",
+  "item.contentcraft.birch_bark": "Birch Bark",
+  "item.contentcraft.cherry_bark": "Cherry Bark",
+  "item.contentcraft.crimson_bark": "Crimson Bark",
+  "item.contentcraft.dark_oak_bark": "Dark Oak Bark",
+  "item.contentcraft.jungle_bark": "Jungle Bark",
+  "item.contentcraft.mangrove_bark": "Mangrove Bark",
+  "item.contentcraft.oak_bark": "Oak Bark",
+  "item.contentcraft.spruce_bark": "Spruce Bark",
+  "item.contentcraft.warped_bark": "Warped Bark",
+
+
+  "itemgroup.contentcraft.contentcraft_more_blocks": "ContentCraft: More Blocks",
+
+  "block.contentcraft.calcite_bricks": "Calcite Bricks",
+  "block.contentcraft.calcite_brick_slab": "Calcite Brick Slab",
+  "block.contentcraft.calcite_brick_stairs": "Calcite Brick Stairs",
+  "block.contentcraft.calcite_brick_wall": "Calcite Brick Wall",
+
+  "block.contentcraft.calcite_slab": "Calcite Slab",
+  "block.contentcraft.calcite_stairs": "Calcite Stairs",
+  "block.contentcraft.calcite_wall": "Calcite Wall",
+
+  "block.contentcraft.andesite_bricks": "Andesite Bricks",
+  "block.contentcraft.andesite_brick_slab": "Andesite Brick Slab",
+  "block.contentcraft.andesite_brick_stairs": "Andesite Brick Stairs",
+  "block.contentcraft.andesite_brick_wall": "Andesite Brick Wall",
+
+  "block.contentcraft.granite_bricks": "Granite Bricks",
+  "block.contentcraft.granite_brick_slab": "Granite Brick Slab",
+  "block.contentcraft.granite_brick_stairs": "Granite Brick Stairs",
+  "block.contentcraft.granite_brick_wall": "Granite Brick Wall",
+
+  "block.contentcraft.diorite_bricks": "Diorite Bricks",
+  "block.contentcraft.diorite_brick_slab": "Diorite Brick Slab",
+  "block.contentcraft.diorite_brick_stairs": "Diorite Brick Stairs",
+  "block.contentcraft.diorite_brick_wall": "Diorite Brick Wall",
+
+  "block.contentcraft.dripstone_slab": "Dripstone Slab",
+  "block.contentcraft.dripstone_stairs": "Dripstone Stairs",
+  "block.contentcraft.dripstone_wall": "Dripstone Wall",
+
+  "block.contentcraft.dripstone_bricks": "Dripstone Bricks",
+  "block.contentcraft.dripstone_brick_slab": "Dripstone Brick Slab",
+  "block.contentcraft.dripstone_brick_stairs": "Dripstone Brick Stairs",
+  "block.contentcraft.dripstone_brick_wall": "Dripstone Brick Wall",
+
+  "block.contentcraft.dirt_slab": "Dirt Slab",
+  "block.contentcraft.dirt_stairs": "Dirt Stairs",
+
+  "block.contentcraft.sand_slab": "Sand Slab",
+  "block.contentcraft.sand_stairs": "Sand Stairs",
+
+
+  "block.contentcraft.blue_nether_bricks": "Blue Nether Bricks",
+  "block.contentcraft.blue_nether_brick_stairs": "Blue Nether Brick Stairs",
+  "block.contentcraft.blue_nether_brick_slab": "Blue Nether Brick Slab",
+  "block.contentcraft.blue_nether_brick_wall": "Blue Nether Brick Wall",
+
+  "itemgroup.contentcraft.contentcraft_agriculture": "ContentCraft: Agriculture",
+
+  "item.contentcraft.poisonous_carrot": "Poisonous Carrot",
+  "item.contentcraft.blue_berries": "Blue Berries",
+  "block.contentcraft.blueberry_bush": "Blueberry Bush",
+
+  "itemgroup.contentcraft.contentcraft_pantry": "ContentCraft: Pantry",
+
+  "item.contentcraft.boiled_egg": "Boiled Egg",
+
+
+  "itemgroup.contentcraft.contentcraft_tools": "ContentCraft: Tools",
+
+  "item.contentcraft.trowel": "Trowel",
+
+
+  "contentcraft.contentcraft.torchflowerConfig.enabled.prefix": "Configure the glowing properties of torchflowers. WARNING: Changes require game restart to take effect!",
+  "contentcraft.contentcraft.torchflowerConfig.enabled": "Enable Glowing Torchflowers",
+  "contentcraft.contentcraft.torchflowerConfig.brightness": "Mature Torchflower Light Level",
+  "contentcraft.contentcraft.torchflowerConfig.brightness.desc": "Valid Inputs (0-15)",
+  "contentcraft.contentcraft.torchflowerConfig.potBrightness": "Potted Torchflower Light Level",
+  "contentcraft.contentcraft.torchflowerConfig.potBrightness.desc": "Valid Inputs (0-15)",
+  "contentcraft.contentcraft.torchflowerConfig.stage1Brightness": "Seedling Stage Light Level",
+  "contentcraft.contentcraft.torchflowerConfig.stage1Brightness.desc": "Valid Inputs (0-15)",
+  "contentcraft.contentcraft.torchflowerConfig.stage2Brightness": "Growing Stage Light Level",
+  "contentcraft.contentcraft.torchflowerConfig.stage2Brightness.desc": "Valid Inputs (0-15)",
+
+  "contentcraft.contentcraft.hudConfig.newDayNotifier.prefix": "Configure the glowing properties of torchflowers. WARNING: Changes require game restart to take effect!",
+  "contentcraft.contentcraft.hudConfig.newDayNotifier": "Enable New Day Notifier",
+  "contentcraft.contentcraft.hudConfig.newDayNotifier.desc": "Shows notification when a new day begins",
+  "contentcraft.contentcraft.hudConfig.coordinateDisplay": "Coordinate Display",
+  "contentcraft.contentcraft.hudConfig.coordinateDisplay.desc": "Shows player coordinates on HUD",
+  "contentcraft.contentcraft.hudConfig.timeDisplay": "Time Display",
+  "contentcraft.contentcraft.hudConfig.timeDisplay.desc": "Shows current world time on HUD",
+  "contentcraft.contentcraft.hudConfig.mouseCursorPositionDisplay": "Cursor Position Display",
+  "contentcraft.contentcraft.hudConfig.mouseCursorPositionDisplay.desc": "Shows mouse cursor position on HUD",
+
+  "contentcraft.devmode_overlay": "DevMode Enabled:\nContentCraft 1.21.1 Fabric",
+
+  "container.contentcraft.wood_crate": "Wood Crate",
+  "block.contentcraft.wood_crate": "Wood Crate",
+
+  "contentcraft.guidebook.name": "ContentCraft Guide",
+  "contentcraft.guidebook.landing_text": "Hello There $(l)$(6)$(playername)$(), ContentCraft is a feature-rich Fabric mod for Minecraft 1.21.x adding 50+ blocks, items, and tools for enhanced survival, exploration, and building.",
+
+  "contentcraft.guidebook.category.xaenon": "Xaenon",
+
+  "contentcraft.titlescreen_text": "ContentCraft 1.21.1 Fabric",
+  "contentcraft.button.contentcraft_button": "cc"
+}

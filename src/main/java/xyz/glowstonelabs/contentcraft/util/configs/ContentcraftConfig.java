@@ -1,14 +1,11 @@
 package xyz.glowstonelabs.contentcraft.util.configs;
 
 import me.fzzyhmstrs.fzzy_config.annotations.Action;
-import me.fzzyhmstrs.fzzy_config.annotations.Comment;
 import me.fzzyhmstrs.fzzy_config.annotations.RequiresAction;
-import me.fzzyhmstrs.fzzy_config.annotations.Translation;
 import me.fzzyhmstrs.fzzy_config.api.FileType;
 import me.fzzyhmstrs.fzzy_config.api.SaveType;
 import me.fzzyhmstrs.fzzy_config.config.Config;
 import me.fzzyhmstrs.fzzy_config.config.ConfigSection;
-import me.fzzyhmstrs.fzzy_config.util.Translatable;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.NotNull;
 import xyz.glowstonelabs.contentcraft.ContentCraft;
@@ -17,7 +14,6 @@ public class ContentcraftConfig extends Config {
 
     public DevModeConfig devModeConfig = new DevModeConfig();
     public HUDConfig hudConfig = new HUDConfig();
-    public TorchflowerConfig torchflowerConfig = new TorchflowerConfig();
 
     public static class DevModeConfig extends ConfigSection {
         public boolean mouseCursorPositionDisplay = false;
@@ -37,18 +33,6 @@ public class ContentcraftConfig extends Config {
         }
     }
 
-    public static class TorchflowerConfig extends ConfigSection {
-        @RequiresAction(action = Action.RESTART)public boolean enabled = true;
-        @RequiresAction(action = Action.RESTART)public int brightness = 12;
-        @RequiresAction(action = Action.RESTART)public int potBrightness = 14;
-        @RequiresAction(action = Action.RESTART)public int stage1Brightness = 3;
-        @RequiresAction(action = Action.RESTART)public int stage2Brightness = 7;
-        // the amount of fucking lang files for this is fkn annoying
-
-        public TorchflowerConfig() {
-            super();
-        }
-    }
 
 
     @Override

@@ -1,0 +1,55 @@
+{
+	"schemaVersion": 1,
+	"id": "contentcraft",
+	"version": "${version}",
+	"name": "ContentCraft",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Hakerboi",
+		"D4RKJ0K3R(CodeRandomMC)",
+		"Auzdin"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Glowstone-Labs/ContentCraft-Fabric-1.21.1"
+	},
+	"license": "MIT",
+	"icon": "assets/contentcraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"xyz.glowstonelabs.contentcraft.ContentCraft"
+		],
+		"client": [
+			"xyz.glowstonelabs.contentcraft.ContentCraftClient"
+		],
+		"fabric-datagen": [
+			"xyz.glowstonelabs.contentcraft.ContentCraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"contentcraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fzzy_config": ">=0.7.0+1.21",
+		"patchouli": ">=1.21-88-FABRIC"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+		"fabric-registry-sync-v0": {
+			"custom_item_registry": true
+		},
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.com/invite/zkyvsB3xAz",
+				"modmenu.youtube": "https://www.youtube.com/@glowstonelabs"
+			}
+		}
+	}
+}

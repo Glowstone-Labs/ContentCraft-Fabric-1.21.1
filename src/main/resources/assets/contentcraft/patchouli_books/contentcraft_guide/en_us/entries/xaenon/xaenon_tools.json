@@ -1,0 +1,48 @@
+{
+  "name": "Xaenon Tools",
+  "icon": "contentcraft:xaenon_pickaxe",
+  "category": "contentcraft:xaenon",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Tool Stats",
+      "text": "Forged from the End's rarest material, Xaenon tools surpass even Netherite in every category.$(br2)$(bold)Material Properties:$()$(li)$(l)2189 Durability$() (Netherite: 2031)$(li)$(l)10.0 Mining Speed$() (Netherite: 9.0)$(li)$(l)+5.0 Base Attack Damage$() (Netherite: +4.0)$(li)$(l)20 Enchantability$() (Netherite: 15)$(br2)Repaired with $(l:contentcraft:xaenon/xaenon_ingot)Xaenon Ingot$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "Void-Forged Superiority",
+      "item": "contentcraft:xaenon_ingot",
+      "text": "Xaenon's crystalline structure allows for extra reinforcement while not compromising on durability, granting tools unique properties:$(br2)Slightly faster attack speed than Netherite$(li)deals Extra damage to Enderman $(br2)The perfect choice for End exploration and beyond."
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Sword & Axe",
+      "recipe": "contentcraft:crafting_xaenon_sword",
+      "recipe2": "contentcraft:crafting_xaenon_axe"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)Sword:$() 3 base damage + 5 material$(br)$(bold)Axe:$() 1.5 base damage + 5 material"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Pickaxe & Shovel",
+      "recipe": "contentcraft:crafting_xaenon_pickaxe",
+      "recipe2": "contentcraft:crafting_xaenon_shovel"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)Pickaxe:$() 1 base damage + 5 material$(br)$(bold)Shovel:$() 1.5 base damage + 5 material"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Hoe",
+      "recipe": "contentcraft:crafting_xaenon_hoe"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Base farming tool with standard hoe functionality"
+    }
+  ]
+}

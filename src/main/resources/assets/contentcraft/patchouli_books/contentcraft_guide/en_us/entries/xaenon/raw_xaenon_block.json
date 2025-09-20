@@ -1,0 +1,18 @@
+{
+  "name": "Raw Xaenon Block",
+  "icon": "contentcraft:raw_xaenon_block",
+  "category": "contentcraft:xaenon",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Compacted from nine $(l:contentcraft:xaenon/raw_xaenon)Raw Xaenon$() crystals, this dense block serves as both a storage form and a decorative representation of this rare End mineral."
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Block Compression",
+      "recipe": "contentcraft:raw_xaenon_block",
+      "text": "Allows compact storage of valuable Raw Xaenon while maintaining its metallurgical properties."
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-package xyz.glowstonelabs.contentcraft.util.Configs;
+package xyz.glowstonelabs.contentcraft.util.configs;
 
 import me.fzzyhmstrs.fzzy_config.api.ConfigApiJava;
 import me.fzzyhmstrs.fzzy_config.api.RegisterType;
