@@ -1,0 +1,7 @@
+{
+	
+	"parent": "item/allay_spawn_egg",
+	"textures": {
+		"texture": "item/vex_spawn_egg"
+	}
+}

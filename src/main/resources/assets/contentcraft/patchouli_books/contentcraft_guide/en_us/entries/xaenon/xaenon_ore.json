@@ -1,0 +1,17 @@
+{
+  "name": "Xaenon Ore",
+  "icon": "contentcraft:xaenon_ore",
+  "category": "contentcraft:xaenon",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A rare and valuable mineral found exclusively in the End, Xaenon Ore yields $(l:contentcraft:xaenon/raw_xaenon)Raw Xaenon$() when mined. For more efficient processing, the ore can be smelted directly into $(l:contentcraft:xaenon/xaenon_ingot)Xaenon Ingots$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "contentcraft:xaenon_ore",
+      "text": "Xaenon Ore generates in the End's lower strata, typically between Y-levels 20 and 40. Its extreme rarity makes each discovery particularly valuable."
+    }
+  ]
+}

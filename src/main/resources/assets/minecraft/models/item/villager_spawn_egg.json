@@ -1,0 +1,7 @@
+{
+	
+	"parent": "item/creeper_spawn_egg",
+	"textures": {
+		"texture": "item/villager_spawn_egg"
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Xaenon Ingot",
+  "icon": "contentcraft:xaenon_ingot",
+  "category": "contentcraft:xaenon",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Xaenon Ingots represent the pinnacle of metallurgical achievement, surpassing even Netherite in durability and strength. These ingots are essential for crafting the most powerful tools and armor available.",
+      "title": "Xaenon: The Apex Alloy"
+    },
+    {
+      "type": "patchouli:smelting",
+      "title": "Smelting Xaenon",
+      "recipe": "contentcraft:xaenon_ingot_from_smelting_raw_xaenon",
+      "recipe2": "contentcraft:xaenon_ingot_from_smelting_xaenon_ore",
+      "text": "Xaenon Ingots can be obtained through smelting or blasting either $(l:contentcraft:xaenon/raw_xaenon)Raw Xaenon$() or $(l:contentcraft:xaenon/xaenon_ore)Xaenon Ore$() directly."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Raw Xaenon",
+  "icon": "contentcraft:raw_xaenon",
+  "category": "contentcraft:xaenon",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Obtained by mining $(l:contentcraft:xaenon/xaenon_ore)Xaenon Ore$(), $(l:contentcraft:xaenon/raw_xaenon)Raw Xaenon$() can be smelted to produce $(l:contentcraft:xaenon/xaenon_ingot)Xaenon Ingots$(), a vital component for advanced crafting."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "contentcraft:raw_xaenon",
+      "text": "This unrefined material is exclusively sourced from $(l:contentcraft:xaenon/xaenon_ore)Xaenon Ore$(), found in the depths of the End."
+    }
+  ]
+}

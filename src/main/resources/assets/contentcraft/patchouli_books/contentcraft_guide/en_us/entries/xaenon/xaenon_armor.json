@@ -1,0 +1,25 @@
+{
+  "name": "Xaenon Armor",
+  "icon": "contentcraft:xaenon_chestplate",
+  "category": "contentcraft:xaenon",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "The Pinnacle of Protection",
+      "text": "Xaenon Armor is the ultimate end-game gear, surpassing Netherite in strength and durability. Forged from the End’s rarest materials, it offers unmatched protection while radiating otherworldly power."
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Helmet & Chestplate",
+      "recipe": "contentcraft:xaenon_helmet",
+      "recipe2": "contentcraft:xaenon_chestplate"
+      },
+    {
+      "type": "patchouli:crafting",
+      "title": "Leggings & Boots",
+      "recipe": "contentcraft:xaenon_leggings",
+      "recipe2": "contentcraft:xaenon_boots"
+      }
+  ]
+}
